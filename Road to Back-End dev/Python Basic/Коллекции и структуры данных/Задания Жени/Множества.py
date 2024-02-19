@@ -1,0 +1,18 @@
+some_set = {1, 3, 4, 5}
+some_set_2 = {5, 7, 9, 1}
+some_set.add(6)
+print(some_set)
+some_set_2.remove(5)
+print(some_set_2)
+some_set_3 = some_set_2.copy()
+print(some_set_3)
+some_set_3.discard(4)
+print(some_set_3)
+giga_set = some_set.union(some_set_2, some_set_3)
+print(giga_set)
+mega_set = some_set.intersection(some_set_2)
+print(mega_set)
+ultra_set = some_set.symmetric_difference(some_set_2)
+print(ultra_set)
+ultra_set_mega_giga_set = some_set.difference(some_set_2)
+print(ultra_set_mega_giga_set)
